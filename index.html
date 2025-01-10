@@ -12,9 +12,8 @@
 </head>
 <body>
   <article class="card">
-    <div class="card-image">
-      <img src="images/drawers.jpg">
-    </div>
+    <img src="images/drawers.jpg" class="card-image">
+
     <div class="card-content">
       <h2>
         Shift the overall look and feel by adding these wonderful 
@@ -28,8 +27,10 @@
       <footer>
         <div class="author">
           <img src="/images/avatar-michelle.jpg">
-          <h3>Michelle Appleton</h3>
-          <p>28 Jun 2020</p>
+          <div class="flex-col">
+            <h3>Michelle Appleton</h3>
+            <p class="grayish-blue">28 Jun 2020</p>
+          </div>
         </div>
         <div class="share">
           <p>Share</p>
@@ -37,8 +38,8 @@
           <img src="images/icon-twitter.svg">
           <img src="images/icon-pinterest.svg">
         </div>
-        <button>
-          <img src="/images/icon-share.svg">
+        <button id="share-btn">
+          <img src="/images/icon-share.svg" class="centered">
         </button>
       </footer>
     </div>
