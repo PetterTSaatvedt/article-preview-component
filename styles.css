@@ -72,6 +72,9 @@ body {
     font-family: "Manrope", sans-serif;
     padding: 1rem;
     background-color: var(--light-grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -108,9 +111,8 @@ h3 {
 
 /* Card */
 .card {
-  margin: 0 auto;
   background-color: white;
-  max-width: 30rem;
+  max-width: 20rem;
   border-radius: 1rem;
 }
 
@@ -133,15 +135,16 @@ footer {
   align-items: center;
   justify-content: space-between;
   margin-top: 1rem;
+  position: relative;
 }
 
-.author {
+#author {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.author img {
+#author img {
   width: 2.5rem;
   border-radius: 999px;
 }
@@ -153,6 +156,31 @@ footer {
   border-radius: 999px;
 }
 
-.share {
+#share-btn:focus {
+  color: white;
+  background-color: var(--grayish-blue);
+}
+
+#share-btn:focus .share-icon {
+  filter: brightness(0) invert(1);
+}
+
+#share {
   display: none;
+  gap: 1rem;
+}
+
+.share-text {
+  letter-spacing: 5px;
+}
+
+@media (min-width: 900px){
+  #share {
+    background-color: var(--very-dark-grayish-blue);
+    padding: 1.125rem 2.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 4rem;
+    right: -7rem;
+  }
 }
