@@ -118,18 +118,26 @@ h3 {
 }
 
 .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
   padding: 2.5rem 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-footer {
+#footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1rem;
   position: relative;
+  width: 100%;
+  padding: 0.75rem 2rem 1.25rem;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
 }
 
 #author {
@@ -148,15 +156,12 @@ footer {
   height: 2rem;
   width: 2rem;
   border-radius: 999px;
+  background-color: var(--light-grayish-blue);
+  cursor: pointer;
 }
 
-#share-btn:focus {
-  color: white;
-  background-color: var(--grayish-blue);
-}
-
-#share-btn:focus .share-icon {
-  filter: brightness(0) invert(1);
+#share-icon {
+  filter: none;
 }
 
 #share {
@@ -186,6 +191,10 @@ footer {
     padding: 2rem 2.5rem;
   }
 
+  #main-content {
+    padding: 0;
+  }
+
   h2 {
     font-size: 1.25rem;
   }
@@ -199,7 +208,8 @@ footer {
     right: -7rem;
   }
 
-  footer {
-    margin-top: 0;
+  #footer {
+    margin-top: 1rem;
+    padding: 0;
   }
 }
