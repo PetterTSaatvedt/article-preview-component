@@ -173,6 +173,30 @@ h3 {
   letter-spacing: 5px;
 }
 
+
+/* Toggle Classes with sufficient specificity */
+#author.hidden {
+  display: none;
+}
+
+#share.visible {
+  display: flex;
+}
+
+#share-btn.active {
+  background-color: var(--desaturated-dark-blue);
+}
+
+#share-icon.dark-icon {
+  filter: brightness(0) invert(1);
+}
+
+#footer.dark-footer {
+  background-color: var(--very-dark-grayish-blue);
+  padding: 1rem 2rem 1rem;
+}
+
+
 @media (min-width: 900px){
   .card {
     max-width: 45.625rem;
