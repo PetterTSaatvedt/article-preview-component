@@ -167,11 +167,13 @@ h3 {
 #share {
   display: none;
   gap: 1rem;
+  align-items: center;
 }
 
 .share-text {
   letter-spacing: 5px;
 }
+
 
 
 /* Toggle Classes with sufficient specificity */
